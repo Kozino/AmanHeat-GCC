@@ -61,7 +61,7 @@ const MQTT_JSON_PAYLOAD = `{
   "sha256_audit_stamp": "0x8f2a991b4c7301e4928d11c491e8401923"
 }`;
 
-export default function AtexBridgeCodeViewer() {
+export function AtexBridgeCodeViewer() {
   const [copiedCode, setCopiedCode] = useState(false);
   const [copiedPayload, setCopiedPayload] = useState(false);
 
@@ -132,3 +132,5 @@ export default function AtexBridgeCodeViewer() {
     </div>
   );
 }
+
+export default AtexBridgeCodeViewer;
