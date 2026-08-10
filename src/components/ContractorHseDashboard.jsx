@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Radio, Bell, ShieldCheck, Download, Plus, HardHat, AlertTriangle, CheckCircle2, Clock } from 'lucide-react';
 import ManualDataEntryModal from './ManualDataEntryModal';
 
-export default function ContractorHseDashboard({ plants, setPlants }) {
+export function ContractorHseDashboard({ plants, setPlants }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleAddMeasurement = (newRecord) => {
@@ -202,3 +202,5 @@ export default function ContractorHseDashboard({ plants, setPlants }) {
     </div>
   );
 }
+
+export default ContractorHseDashboard;
